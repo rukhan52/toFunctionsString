@@ -9,7 +9,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program":"bin/ifelsefunction.dart",
+            "program":"bin/switch.dart",
             "console": "externalTerminal"
         }
     ]
