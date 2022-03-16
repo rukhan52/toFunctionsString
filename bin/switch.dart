@@ -58,28 +58,67 @@ void main() {
   String? firstA = stdin.readLineSync();
   int firstA1 = int.parse(firstA!);
   print("\nEnter a second number");
-  String? firstB = stdin.readLineSync();
-  int firstB1 = int.parse(firstB!);
+  String? secondB = stdin.readLineSync();
+  int secondB1 = int.parse(secondB!);
   print("\n Enter operator");
   String? firstC = stdin.readLineSync();
   String firstC1 = firstC!;
   int res = 0;
   switch (firstC1) {
     case '+':
-      print("Sum of numbers is " + (firstA1 + firstB1).toString());
+      print("Sum of numbers is " + (firstA1 + secondB1).toString());
       break;
     case '-':
-      print("Subtract of numbers is " + (firstA1 - firstB1).toString());
+      print("Subtract of numbers is " + (firstA1 - secondB1).toString());
       break;
     case '*':
-      print("Multiply of numbers is " + (firstA1 * firstB1).toString());
+      print("Multiply of numbers is " + (firstA1 * secondB1).toString());
       break;
     case '/':
-      print("Divide of numbers is " + (firstA1 / firstB1).toString());
+      print("Divide of numbers is " + (firstA1 / secondB1).toString());
       break;
     case '%':
-      print("Modulus of numbers is " + (firstA1 % firstB1 == res).toString());
+      print("Modulus of numbers is " + (firstA1 % secondB1 == res).toString());
       print(res);
       break;
+    default:
+      print("invalid operator enterence " + firstC1);
+  }
+
+  //
+  print("Enter a first number");
+  String? firstVal = stdin.readLineSync();
+  int firstVal1 = int.parse(firstVal!);
+  print("\nEnter a second number");
+  String? SecondVal = stdin.readLineSync();
+  int SecondVal1 = int.parse(SecondVal!);
+  print("\nEnter a third number");
+  String? ThirdVal = stdin.readLineSync();
+  int ThirdVal1 = int.parse(ThirdVal!);
+
+  if (firstVal1 > SecondVal1 && firstVal1 > ThirdVal1) {
+    print("The First number is geater");
+  } else if (SecondVal1 > firstVal1 && SecondVal1 > ThirdVal1) {
+    print("The Second number is geater");
+  } else {
+    print("The Third number is geater");
+  }
+  print("Enter a character");
+  String? valuewC = stdin.readLineSync();
+  String valuewC1 = valuewC!;
+  if (valuewC1 == 'a' ||
+      valuewC1 == 'e' ||
+      valuewC1 == 'i' ||
+      valuewC1 == 'o' ||
+      valuewC1 == 'u') {
+    print("The letter is vowel is in lowercase");
+  } else if (valuewC1 == 'A' ||
+      valuewC1 == 'E' ||
+      valuewC1 == 'I' ||
+      valuewC1 == 'O' ||
+      valuewC1 == 'U') {
+    print("The letter is vowel is in UPPERcase");
+  } else {
+    print("The letter is consonant");
   }
 }
