@@ -9,7 +9,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program":"bin/DoWhileLoop.dart",
+            "program":"bin/arrayrelated.dart",
             "console": "externalTerminal"
         }
     ]

@@ -36,4 +36,30 @@ void main() {
     c = c + 1;
   } while (c <= f2);
   print(r.toString() + " is the result of raising power");
+
+  // List<int> marks = [5, 4, 6, 7, 8];
+  // for (int i = 0; i <= 4; i++) {
+  //   print("marks of first " + marks[i].toString());
+  // }
+  // print('Enter a number');
+  // String? a1 = stdin.readLineSync();
+  // int a = int.parse(a1!);
+  // for (int b = 1; b <= 10; b++) {
+  //   print('$a * $b = ${a * b}');
+  // }
+  // print('Enter a number');
+  // int sum = 0;
+  // String? n1 = stdin.readLineSync();
+  // int n = int.parse(n1!);
+  // for (int i = 1; i <= n; i++) {
+  //   sum = sum + (i * i);
+  // }
+  // print('$sum');
+
+  // for (int i = 1; i <= 8; i++) {
+  //   if (i == 5) {
+  //     continue;
+  //   }
+  //   print(i);
+  // }
 }
